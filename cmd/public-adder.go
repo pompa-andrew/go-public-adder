@@ -1,0 +1,5 @@
+package public_adder
+
+func Add(a, b int) int {
+	return a + b
+}
