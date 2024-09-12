@@ -5,6 +5,10 @@ package public_adder
 //
 // # Attention!
 // Function... adds to number to each other!
+//
+// - A first element
+// - A second element
+//
 // Jon said I have to add this [link]: https://www.mathsisfun.com/numbers/addition.html
 func Add(a, b int) int {
 	return a + b
