@@ -1,6 +1,12 @@
 // Package public_adder it's a package comment!
 package public_adder
 
+import "golang.org/x/exp/constraints"
+
+type Number interface {
+	constraints.Float | constraints.Integer
+}
+
 // Add
 //
 // # Attention!
@@ -10,6 +16,6 @@ package public_adder
 // - A second element
 //
 // Jon said I have to add this [link]: https://www.mathsisfun.com/numbers/addition.html
-func Add(a, b int) int {
+func Add[T Number](a, b T) T {
 	return a + b
 }
